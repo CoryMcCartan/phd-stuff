@@ -27,6 +27,8 @@ jobs:
             any::janitor
             any::dplyr
             any::stringr
+            any::openssl
+            any::markdown
 
       - name: Build Quarto Site
         run: Rscript R/00_build.R
