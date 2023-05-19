@@ -1,1 +1,1 @@
-Sitemap: https://CoryMcCartan.github.io/phd-stuff/sitemap.xml
+Sitemap: https://github.com/CoryMcCartan/phd-stuff/sitemap.xml
