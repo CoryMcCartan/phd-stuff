@@ -3,7 +3,7 @@
 There's a lot more learning that goes on in a Ph.D. than just the formal coursework.
 This website collects some of the accumulated wisdom of current and past Ph.D. students.
 
-### [**Submit advice here**](https://docs.google.com/forms/d/e/1FAIpQLSfZkPa7OP-KASLGYcHvTQ8MxTlzibv8XRtkKjyajptMtZv-jQ/viewform)
+### [**Submit advice here &raquo;**](https://docs.google.com/forms/d/e/1FAIpQLSfZkPa7OP-KASLGYcHvTQ8MxTlzibv8XRtkKjyajptMtZv-jQ/viewform)
 
 ## How the Website Works
 
