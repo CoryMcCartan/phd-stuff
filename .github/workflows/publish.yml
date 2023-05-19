@@ -1,0 +1,42 @@
+on:
+  push:
+    branches: main
+  workflow_dispatch:
+
+name: Render and Publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.2.0'
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            any::here
+            any::googlesheets4
+            any::janitor
+            any::dplyr
+            any::stringr
+
+      - name: Build Quarto Site
+        run: Rscript R/00_build.R
+        env:
+          GARGLE_PASSWORD: ${{ secrets.GARGLE_PASSWORD }}
+          PHD_PASSWORD: ${{ secrets.PHD_PASSWORD }}
+
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
