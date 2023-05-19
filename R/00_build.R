@@ -11,9 +11,12 @@ suppressPackageStartupMessages({
 })
 
 auth()
+cat("Authenticated\n")
 
 advice = get_sheet() |>
     tidy_sheet() |>
     proc_sheet()
+cat("Data downloaded and processed\n")
 
 render_pages(advice, get_template())
+cat("Quarto files generated\n")
