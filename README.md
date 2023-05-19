@@ -5,11 +5,11 @@ This website collects some of the accumulated wisdom of current and past Ph.D. s
 
 ### [**Go to the website &raquo;**](https://corymccartan.com/phd-stuff/)
 
-### [**Submit advice here &raquo;**](https://docs.google.com/forms/d/e/1FAIpQLSfZkPa7OP-KASLGYcHvTQ8MxTlzibv8XRtkKjyajptMtZv-jQ/viewform)
+### [**Submit tips, tricks, and advice here &raquo;**](https://docs.google.com/forms/d/e/1FAIpQLSfZkPa7OP-KASLGYcHvTQ8MxTlzibv8XRtkKjyajptMtZv-jQ/viewform)
 
 ## How the Website Works
 
-Individual bits of advice are submitted at the form above.
+Individual tips and bits of advice are submitted at the form above.
 Submissions are then screened and assigned a title.
 The script `R/00_build.R` then can be run to generate a Quarto website collating all the advice.
 
