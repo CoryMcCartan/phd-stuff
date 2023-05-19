@@ -11,3 +11,5 @@ credentials.json
 
 /.quarto/
 docs
+advice/*.qmd
+!advice/_template.qmd
