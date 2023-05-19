@@ -10,7 +10,7 @@ website:
   navbar:
     background: dark
     search: true
-  body-footer: |
+  page-footer: |
     <div style="margin-top: 7rem; font-size: 9pt; color: #888;">
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
     <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
@@ -25,3 +25,5 @@ format:
     toc: true
     shift-heading-level-by: 1
     date-format: "MMMM ’YY"
+execute:
+  eval: false
