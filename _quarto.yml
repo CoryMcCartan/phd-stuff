@@ -1,0 +1,26 @@
+project:
+  type: website
+  render:
+   - "*.qmd"
+   - "!LICENSE.md"
+
+website:
+  title: "Stuff I Wish I'd Known Earlier in My Ph.D."
+  navbar:
+    background: dark
+    search: true
+  body-footer: |
+    <div style="margin-top: 7rem; font-size: 9pt; color: #888;">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />
+    </a>&nbsp;This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </div>
+
+
+format:
+  html:
+    theme: lumen
+    toc: true
+    shift-heading-level-by: 1
+    date-format: "MMMM ’YY"

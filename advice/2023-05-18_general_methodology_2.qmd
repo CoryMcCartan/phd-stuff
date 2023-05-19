@@ -1,0 +1,21 @@
+---
+title: Test
+date: 2023-05-18
+file-modified: 2023-05-18
+author: [Cory McCartan]
+categories:
+    - 'General Methodology'
+search: TRUE
+---
+
+# Test 1
+
+This tests **the** *formatting*. We can also do math, inline: $E=mc^2$; or not: $$ \sin^2(x)+\cos^2(x)=1. $$
+
+— Cory McCartan, 2019 cohort
+
+---
+
+### Additional content for Test 1
+
+— Cory McCartan, 2019 cohort

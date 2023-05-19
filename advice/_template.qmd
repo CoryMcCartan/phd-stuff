@@ -1,0 +1,11 @@
+---
+title: {title}
+date: {str_sub(slug, 1, 10)}
+file-modified: {str_sub(slug, 1, 10)}
+author: [{authors}]
+categories:
+    - '{category}'
+search: {!str_detect(category, "Harvard")}
+---
+
+{poss_encrypt(advice, category, slug)}

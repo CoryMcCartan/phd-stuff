@@ -1,0 +1,12 @@
+---
+listing:
+  contents: advice
+  sort: "date desc"
+  type: grid
+  categories: true
+  fields: [categories, date, title, description]
+---
+
+There's a lot more learning that goes on in a Ph.D. than just the formal coursework.
+Here you'll find some of the accumulated wisdom of current and past Ph.D. students.
+Some bits of advice will require a login to view.
