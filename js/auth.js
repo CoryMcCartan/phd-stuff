@@ -9,7 +9,6 @@ async function decryptContents(el) {
 }
 
 async function getKey() {
-    //let pass = prompt("Password: ")
     let pass;
     if ("phd_stuff_pass" in localStorage) {
         pass = localStorage.phd_stuff_pass;
@@ -18,17 +17,15 @@ async function getKey() {
         localStorage.phd_stuff_pass = pass;
     }
     let keysha = await crypto.subtle.digest("SHA-256", str2ab(pass));
-    return await crypto.subtle.importKey("raw", keysha, "AES-CBC", false, ["encrypt", "decrypt"])
+    return await crypto.subtle.importKey("raw", keysha, "AES-CBC", false, ["decrypt"])
 }
 
 /*
  * UTILITY FUNCTIONS
  */
 
-/*
-Convert a string into an ArrayBuffer
-from https://developers.google.com/web/updates/2012/06/How-to-convert-ArrayBuffer-to-and-from-String
-*/
+// Convert a string into an ArrayBuffer
+// from https://developers.google.com/web/updates/2012/06/How-to-convert-ArrayBuffer-to-and-from-String
 function str2ab(str) {
   const buf = new ArrayBuffer(str.length);
   const bufView = new Uint8Array(buf);
@@ -45,8 +42,9 @@ function getDestroyIV() {
     return iv;
 }
 
-// ENTRY POINT
-
+/*
+ * ENTRY POINT
+ */
 (async function() {
     let el = document.getElementById("encrypted");
     try {
